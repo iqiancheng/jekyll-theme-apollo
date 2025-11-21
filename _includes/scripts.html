@@ -1,0 +1,51 @@
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      tags: 'ams'
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+{% if site.google_analytics %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{% endif %}
+
+<script src="{{ '/assets/js/copy-code.js' | relative_url }}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    mermaid.initialize({ startOnLoad: true });
+  });
+</script>
+
+<!-- Pangu.js: Auto spacing between Chinese and English -->
+<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Apply pangu spacing to the entire page
+    pangu.spacingPage();
+    
+    // Optional: Auto-spacing for dynamically loaded content
+    // Uncomment if you have dynamic content loading
+    // const observer = new MutationObserver(function() {
+    //   pangu.spacingPage();
+    // });
+    // observer.observe(document.body, { childList: true, subtree: true });
+  });
+</script>

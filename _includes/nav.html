@@ -1,0 +1,13 @@
+<ul class="nav nav-list">
+  {% for item in site.menu %}
+  <li class="nav-list-item">
+    <a class="nav-list-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}" target="{% if item.link contains 'http' %}_blank{% else %}_self{% endif %}">
+      {% if item.i18n_key %}
+        {{ site.data.i18n[site.language].menu[item.i18n_key] | upcase }}
+      {% else %}
+        {{ item.name | upcase }}
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

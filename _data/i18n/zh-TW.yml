@@ -1,0 +1,18 @@
+# 繁體中文翻譯
+read_more: "閱讀更多"
+archive: "歸檔"
+categories: "分類"
+tags: "標籤"
+powered_by: "由"
+and: "和"
+
+# 菜單項
+menu:
+  blog: "部落格"
+  archive: "歸檔"
+  about: "關於"
+  rss: "訂閱"
+
+# 日期格式
+date_format: "%Y年%m月%d日"
+date_format_short: "%m月%d日"

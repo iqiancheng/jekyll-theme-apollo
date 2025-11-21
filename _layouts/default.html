@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <a class="logo-link" href="{{ '/' | relative_url }}">
+                    <img src="{{ site.logo | relative_url }}" alt="logo">
+                </a>
+                {% include nav.html %}
+            </header>
+            <main class="container">
+                {{ content }}
+            </main>
+            <footer>
+                {% include copyright.html %}
+            </footer>
+        </div>
+        {% include scripts.html %}
+    </body>
+</html>

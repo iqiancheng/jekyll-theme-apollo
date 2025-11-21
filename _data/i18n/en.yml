@@ -1,0 +1,18 @@
+# English translations
+read_more: "more..."
+archive: "Archive"
+categories: "Categories"
+tags: "Tags"
+powered_by: "powered by"
+and: "and"
+
+# Menu items
+menu:
+  blog: "Blog"
+  archive: "Archive"
+  about: "About"
+  rss: "RSS"
+
+# Date formats
+date_format: "%b %d, %Y"
+date_format_short: "%b %d"

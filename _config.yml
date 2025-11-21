@@ -1,0 +1,96 @@
+title: Apollo
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A Blog Powered By Jekyll
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Language / 语言设置
+# Supported: en (English), zh-CN (简体中文), zh-TW (繁體中文), ja (日本語)
+# Change this to switch UI language. See docs/i18n.md for details.
+language: ja
+
+# Assets
+logo: /assets/favicon.png
+favicon: /assets/favicon.png
+
+# Menu
+# Use i18n_key to reference translations in _data/i18n/[language].yml
+# The actual display name will be automatically translated based on site.language
+menu:
+  - i18n_key: blog
+    link: /
+  - i18n_key: archive
+    link: /archive/
+  # - i18n_key: weibo
+  #   link: http://weibo.com/sunchongsheng
+  - name: GitHub  # External links can keep hardcoded names
+    link: https://github.com/iqiancheng
+  - i18n_key: rss
+    link: /feed.xml
+  - i18n_key: about
+    link: /about/
+
+# Comment
+disqus:
+
+# Analytics
+google_analytics:
+
+# Copyright
+startyear: 2015
+
+# SEO Settings
+author:
+  name: Your Name
+  email: your-email@example.com
+  twitter: yourusername
+
+twitter:
+  username: yourusername
+  card: summary_large_image
+
+social:
+  name: Your Name
+  links:
+    - https://twitter.com/yourusername
+    - https://github.com/iqiancheng
+
+# Default image for social sharing (if post doesn't have one)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/default-share.png
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - gulpfile.js
+  - README.md
+  - LICENSE
+  - docs
+  - source
+  - layouts
+  - languages
+  - recipes
+  - _drafts/images/
+
+# jekyll-picture-tag features
+# brew install libvips imagemagick libheif libwebp
+# {% picture myimage.jpg alt="描述" %}
+# picture:
+#   source: "assets/images"
+#   output: "generated"
+#   formats: [webp, original]
+#   webp:
+#     quality: 80

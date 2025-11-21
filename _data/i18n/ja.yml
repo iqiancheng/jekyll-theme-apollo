@@ -1,0 +1,18 @@
+# 日本語翻訳
+read_more: "続きを読む"
+archive: "アーカイブ"
+categories: "カテゴリー"
+tags: "タグ"
+powered_by: "powered by"
+and: "と"
+
+# メニュー項目
+menu:
+  blog: "ブログ"
+  archive: "アーカイブ"
+  about: "について"
+  rss: "RSS"
+
+# 日付フォーマット
+date_format: "%Y年%m月%d日"
+date_format_short: "%m月%d日"

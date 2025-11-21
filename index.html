@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<ul class="home post-list">
+    {% for post in site.posts %}
+    <li class="post-list-item">
+        <article class="post-block">
+            <h2 class="post-title">
+                <a class="post-title-link" href="{{ post.url | relative_url }}">
+                    {{ post.title }}
+                </a>
+            </h2>
+            <div class="post-info">
+                {{ post.date | date: "%b %d, %Y" }}
+            </div>
+            <div class="post-content">
+                {{ post.excerpt }}
+            </div>
+            <a class="read-more" href="{{ post.url | relative_url }}">{{ site.data.i18n[site.language].read_more }}</a>
+        </article>
+    </li>
+    {% endfor %}
+</ul>
